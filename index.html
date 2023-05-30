@@ -186,6 +186,18 @@
 
     </form>
     
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // collect value of input field
+  $name = $_POST['fname'];
+  if (empty($name)) {
+    echo "Name is empty";
+  } else {
+    echo $name;
+  }
+}
+?>
+    
     <div class="kartu-tutor">
         <a href="https://web.facebook.com/profile.php?id=100025595433589" target="_blank"><button class="btn"><i class="fab fa-facebook"> facebook</i></button></a>
         <a href="https://www.instagram.com/exren0411/" target="_blank"><button class="btn"><i class="fab fa-instagram"> instagram</i></button></a>
