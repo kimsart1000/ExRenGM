@@ -30,8 +30,6 @@
             <li><a href="#about"><i class="fas fa-user"></i>                                  tentang saya</a></li>
             <li><a href="#education"><i class="fas fa-graduation-cap"></i>                                   pendidikan</a></li>
             <li><a href="#contact"><i class="fas fa-address-book"></i>                                   contact</a></li>
-            <li><a href="https://saweria.co/exrengaming"target="_blank"><i class="fas fa-hand-holding-usd"></i>                                   Saweria</a></li>
-            <li><a href="https://trakteer.id/exren"target="_blank"><i class="fas fa-hand-holding-usd"></i>                                   Trakteer</a></li>
         </ul>
     </nav>
 
@@ -181,22 +179,10 @@
         <input type="text" placeholder="name" class="box">
         <input type="email" placeholder="email" class="box">
         <input type="text" placeholder="UID Genshin" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="keterangan"></textarea>
+        <textarea name="text" id="" cols="30" rows="10" class="box message" placeholder="keterangan"></textarea>
         <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
 
     </form>
-    
-    <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // collect value of input field
-  $name = $_POST['fname'];
-  if (empty($name)) {
-    echo "Name is empty";
-  } else {
-    echo $name;
-  }
-}
-?>
     
     <div class="kartu-tutor">
         <a href="https://web.facebook.com/profile.php?id=100025595433589" target="_blank"><button class="btn"><i class="fab fa-facebook"> facebook</i></button></a>
